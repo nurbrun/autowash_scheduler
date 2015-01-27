@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @auto_wash.location %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @auto_wash.start %>
+</p>
+
+<p>
+  <strong>Close:</strong>
+  <%= @auto_wash.close %>
+</p>
+
+<%= link_to 'Edit', edit_auto_wash_path(@auto_wash) %> |
+<%= link_to 'Back', auto_washes_path %>

@@ -1,0 +1,29 @@
+<h1>Listing auto_washes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Start</th>
+      <th>Close</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auto_washes.each do |auto_wash| %>
+      <tr>
+        <td><%= auto_wash.location %></td>
+        <td><%= auto_wash.start %></td>
+        <td><%= auto_wash.close %></td>
+        <td><%= link_to 'Show', auto_wash %></td>
+        <td><%= link_to 'Edit', edit_auto_wash_path(auto_wash) %></td>
+        <td><%= link_to 'Destroy', auto_wash, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auto wash', new_auto_wash_path %>

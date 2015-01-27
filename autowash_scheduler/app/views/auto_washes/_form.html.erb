@@ -1,0 +1,29 @@
+<%= form_for(@auto_wash) do |f| %>
+  <% if @auto_wash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@auto_wash.errors.count, "error") %> prohibited this auto_wash from being saved:</h2>
+
+      <ul>
+      <% @auto_wash.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :close %><br>
+    <%= f.datetime_select :close %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
