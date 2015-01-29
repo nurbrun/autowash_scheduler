@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+		<a href="/auto_washes" class="sign-up">All Auto Washes</a>
       <% if current_user %>
         Signed in as <%= current_user.email %>
         <%= link_to "Log out", session_path("current"), :method => :delete, :class =>"sign-up" %> 
