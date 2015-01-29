@@ -10,6 +10,10 @@ class AutoWashesController < ApplicationController
   # GET /auto_washes/1
   # GET /auto_washes/1.json
   def show
+    @auto_wash = AutoWash.find(params[:id])
+    @shift = @auto_wash.shifts.build
+    # @shift.user = current_user
+    @employee_shifts = @auto_wash.shifts.all
   end
 
   # GET /auto_washes/new
