@@ -6,12 +6,12 @@
 <h1>Hours of Operation:</h1>
 <p>
   <strong>Start:</strong>
-  <%= @auto_wash.start %>
+  <%= BusinessTime::Config.beginning_of_workday %>
 </p>
 
 <p>
   <strong>Close:</strong>
-  <%= @auto_wash.close %>
+  <%= BusinessTime::Config.end_of_workday %>
 </p>
 
 <%= link_to 'Edit', edit_auto_wash_path(@auto_wash) %> |
