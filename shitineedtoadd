@@ -1,0 +1,11 @@
+add this calendar!
+
+CALENDAR
+	http://fullcalendar.io/
+		-can i write to shifts, reservations from jquery calendar?
+
+	iCal?-- https://github.com/icalendar/icalendar
+
+should I include business hours module in autowash?
+
+connect business time with autowash model?

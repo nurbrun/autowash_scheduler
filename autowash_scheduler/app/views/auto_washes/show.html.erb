@@ -12,6 +12,7 @@
 <p>
   <strong>Close:</strong>
   <%= BusinessTime::Config.end_of_workday %>
+  <%= 1.business_hour.from_now %>
 </p>
 
 <%= link_to 'Edit', edit_auto_wash_path(@auto_wash) %> |
@@ -53,6 +54,7 @@
     </div>
     <% end %>
 <br>
+<div id='calendar'></div>
 <h1>
   <strong>Shifts:</strong>  
 </h1>
@@ -63,3 +65,4 @@
 <p>End Time: <%= shift.shift_end %></p> 
 <p>ID: <%= shift.id %></p>
 <% end %>
+

@@ -39,6 +39,10 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem "sorcery"
+
 gem 'pry-rails', :group => :development
 
 gem 'business_time'
+
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
